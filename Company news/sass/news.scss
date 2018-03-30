@@ -1,0 +1,77 @@
+@charset "UTF-8";
+//  2.1客户的声音开始
+.customer_listen{
+  background: #f2f2f2;
+  padding: 55px 0 59px 0;
+  margin-bottom: 58px;
+  .customer_w{
+    height:346px;
+    width:1200px;
+    //margin-left: -15px;
+    //margin-right: -15px;
+    margin:0 auto;
+    overflow: hidden;
+    .customer_left{
+      height:264px;
+      width:600px;
+      float: left;
+      h2{
+        font: 900 24px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #606060;
+        text-transform: uppercase;
+        margin: 0 0 41px 0;
+        padding-bottom: 22px;
+        border-bottom: 4px solid #cdad4c;
+      }
+    }
+    .customer_right{
+      float: right;
+      width:570px;
+      height:300px;
+      margin-top:47px;
+    }
+  }
+}
+//  2.1客户的声音结束
+
+//2.2最新热点开始
+.latest{
+  padding: 55px 0 23px 0;
+  background-color: #fff;
+  .lastest_w{
+    width:1170px;
+    margin:0 auto;
+    .lastest-ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li{
+        width:369px;
+      }
+    }
+  }
+}
+//2.2最新热点结束
+
+//2.3建站咨询开始
+.set_consult{
+  background: url(../images/bg_pic2.jpg) right bottom fixed repeat;
+  padding: 137px 0;
+  text-align: center;
+  .set_title{
+    width:970px;
+    color: #ffffff;
+    font: 900 36px/43px 'Open Sans';
+    padding: 22px 0;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    margin:0 auto;
+    span{
+      color: #ff903f;
+    }
+  }
+}
+//2.3建站咨询结束

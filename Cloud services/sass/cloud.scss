@@ -1,0 +1,80 @@
+@charset "UTF-8";
+//2.2了解更多部分开始
+.know_more{
+  height:521px;
+  width:1200px;
+  margin:0 auto;
+  //background-color: #ddffcc;
+  margin-top:100px;
+  .knowm-ul{
+    display:flex;
+    justify-content: space-between;
+    //border:1px solid red;
+    margin-bottom: 63px;
+    padding-bottom: 50px;
+    padding-top:71px;
+  }
+  li{
+    height:380px;
+    width:369px;
+    border:1px solid #d6d6d6;
+    border-bottom: 4px solid #cdad4c;
+    text-align:center;
+    position: relative;
+    .text_all{
+      height:65px;
+      width:307px;
+      padding:100px 30px 0;
+      //.texta-big{
+      //  font: 900 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      //  color: #606060;
+      //  text-transform: uppercase;
+      //  margin-bottom: 15px;
+      //}
+      .tex_img{
+        position:absolute;
+        left:31%;
+        top:-71px;
+      }
+    }
+  }
+}
+button{
+  margin-top:20px;
+}
+button a{
+  display: block;
+  font: bold 13px/33px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#fff;
+  background-color: #ce6c4a;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  padding:0 15px;
+}
+button a:hover{
+  color: #ffffff;
+  background: #cdad4c !important;
+  text-decoration: none !important;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+//了解更多部分结束
+
+//2.2全球自助建站的领航者开始
+.linghangzhe{
+  height:1460px;
+  background: #f2f2f2;
+  padding: 55px 0 0 0;
+.lhz_w{
+  width:1170px;
+  margin:0 auto;
+  .lhz-ul{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+}
+//2.2全球自助建站的领航者结束

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+//2.其他部分开始
+.all_section{
+  padding: 55px 0 0 0;
+  background: #ffffff;
+}
+//2.1团队简介开始
+.brief_introduction{
+  height:775px;
+  width:1200px;
+  margin:0 auto;
+  .brief-ul{
+    display:flex;
+    justify-content: space-between;
+    li{
+      width:371px;
+      padding:0 12px;
+    }
+    .fzlc{
+      width:371px;
+      .yeardate{
+        font-size: 13px;
+        line-height: 15px;
+        overflow: hidden;
+        .year_time{
+          float:left;
+          font: 900 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: #606060;
+          margin-right: 28px;
+          width:48px;
+        }
+        .year_right{
+          float:left;
+          width:288px;
+          p{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .advantage-ul{
+      margin: 0 0 15px 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      li {
+        font-size: 13px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        padding-left: 17px;
+        background: url(../images/list_arrow.png) left 6px no-repeat;
+      }
+      li a:hover{
+        color: #d0b258;
+      }
+    }
+  }
+}
+//2.1团队简介结束
+
+//2.2团队精英开始
+div.team_elites{
+  background: #f2f2f2;
+  padding: 55px 0 0 0;
+  margin-bottom: 58px;
+  overflow: hidden;
+  .elites_w{
+    width:1170px;
+    margin:0 auto;
+    .row{
+     height:437px;
+      .row-ul{
+        display:flex;
+        justify-content: space-between;
+        li{
+          width:300px;
+        }
+      }
+    }
+  }
+}
+//2.2团队精英结束
+
+//2.3简谈开始
+.jiantan{
+  width:1170px;
+  height:683px;
+  padding: 55px 0 0 0;
+  background: #ffffff;
+  margin:0 auto;
+  .jiantan-ul{
+    display:flex;
+    justify-content: space-between;
+    li{
+      padding:0 10px;
+    }
+    .jt_left{
+      width:389px;
+    }
+    .carve_out{
+      font-size:13px;
+      overflow: hidden;
+      .comimg{
+        float:left;
+        margin-right: 19px;
+        color: #5f5f5f;
+        font-size: 50px;
+        margin-top: 4px;
+      }
+      //.comimg:before{
+      //  content: "\f109";
+      //}
+      .longtext{
+        float:right;
+        width:285px;
+        h3{
+          margin-top:0;
+        }
+      }
+    }
+    .jt_middle{
+      width:292px;
+      .jtmiddle-ul{
+        li{
+          font-size: 13px;
+          overflow: hidden;
+          margin-bottom: 12px;
+          padding-left: 17px;
+          background: url(../images/list_arrow.png) left 6px no-repeat;
+        }
+        li a:hover{
+          color: #d0b258;
+        }
+      }
+    }
+    .jt_right{
+      width:457px;
+      .yuanjing{
+        .people_img{
+          float:left;
+          width:170px;
+        }
+        .yuanjing_text{
+          float:right;
+          width:257px;
+        }
+      }
+    }
+  }
+}
+//2.3简谈结束
+//2.其他部分结束

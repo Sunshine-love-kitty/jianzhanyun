@@ -1,0 +1,108 @@
+.all_section {
+  padding: 55px 0 0 0;
+  background: #ffffff; }
+
+.brief_introduction {
+  height: 775px;
+  width: 1200px;
+  margin: 0 auto; }
+  .brief_introduction .brief-ul {
+    display: flex;
+    justify-content: space-between; }
+    .brief_introduction .brief-ul li {
+      width: 371px;
+      padding: 0 12px; }
+    .brief_introduction .brief-ul .fzlc {
+      width: 371px; }
+      .brief_introduction .brief-ul .fzlc .yeardate {
+        font-size: 13px;
+        line-height: 15px;
+        overflow: hidden; }
+        .brief_introduction .brief-ul .fzlc .yeardate .year_time {
+          float: left;
+          font: 900 18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: #606060;
+          margin-right: 28px;
+          width: 48px; }
+        .brief_introduction .brief-ul .fzlc .yeardate .year_right {
+          float: left;
+          width: 288px; }
+          .brief_introduction .brief-ul .fzlc .yeardate .year_right p {
+            margin-bottom: 15px; }
+    .brief_introduction .brief-ul .advantage-ul {
+      margin: 0 0 15px 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden; }
+      .brief_introduction .brief-ul .advantage-ul li {
+        font-size: 13px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        padding-left: 17px;
+        background: url(../images/list_arrow.png) left 6px no-repeat; }
+      .brief_introduction .brief-ul .advantage-ul li a:hover {
+        color: #d0b258; }
+
+div.team_elites {
+  background: #f2f2f2;
+  padding: 55px 0 0 0;
+  margin-bottom: 58px;
+  overflow: hidden; }
+  div.team_elites .elites_w {
+    width: 1170px;
+    margin: 0 auto; }
+    div.team_elites .elites_w .row {
+      height: 437px; }
+      div.team_elites .elites_w .row .row-ul {
+        display: flex;
+        justify-content: space-between; }
+        div.team_elites .elites_w .row .row-ul li {
+          width: 300px; }
+
+.jiantan {
+  width: 1170px;
+  height: 683px;
+  padding: 55px 0 0 0;
+  background: #ffffff;
+  margin: 0 auto; }
+  .jiantan .jiantan-ul {
+    display: flex;
+    justify-content: space-between; }
+    .jiantan .jiantan-ul li {
+      padding: 0 10px; }
+    .jiantan .jiantan-ul .jt_left {
+      width: 389px; }
+    .jiantan .jiantan-ul .carve_out {
+      font-size: 13px;
+      overflow: hidden; }
+      .jiantan .jiantan-ul .carve_out .comimg {
+        float: left;
+        margin-right: 19px;
+        color: #5f5f5f;
+        font-size: 50px;
+        margin-top: 4px; }
+      .jiantan .jiantan-ul .carve_out .longtext {
+        float: right;
+        width: 285px; }
+        .jiantan .jiantan-ul .carve_out .longtext h3 {
+          margin-top: 0; }
+    .jiantan .jiantan-ul .jt_middle {
+      width: 292px; }
+      .jiantan .jiantan-ul .jt_middle .jtmiddle-ul li {
+        font-size: 13px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        padding-left: 17px;
+        background: url(../images/list_arrow.png) left 6px no-repeat; }
+      .jiantan .jiantan-ul .jt_middle .jtmiddle-ul li a:hover {
+        color: #d0b258; }
+    .jiantan .jiantan-ul .jt_right {
+      width: 457px; }
+      .jiantan .jiantan-ul .jt_right .yuanjing .people_img {
+        float: left;
+        width: 170px; }
+      .jiantan .jiantan-ul .jt_right .yuanjing .yuanjing_text {
+        float: right;
+        width: 257px; }
+
+/*# sourceMappingURL=aboutus.css.map */

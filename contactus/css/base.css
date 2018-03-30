@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft Yahei',"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none; }
+
+ul, ol {
+  list-style: none; }
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun","宋体"; }
+
+select, input {
+  vertical-align: middle; }
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0; }
+
+textarea {
+  resize: none; }
+
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle; }
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse; }
+
+body {
+  font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+  color: #666;
+  background: #fff; }
+
+/*清除浮动方法*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+a:hover {
+  color: #C81623; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%; }
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none; }
+
+.col-red {
+  color: #C81623 !important; }
+
+/*公共类*/
+.w {
+  /*版心 提取 */
+  width: 1210px;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.al {
+  text-align: left; }
+
+.ac {
+  text-align: center; }
+
+.ar {
+  text-align: right; }
+
+.hide {
+  display: none; }
+
+p {
+  line-height: 24px;
+  color: #686868;
+  font-size: 13px;
+  margin-bottom: 24px; }
+
+h2 {
+  font: 900 24px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #606060;
+  text-transform: uppercase;
+  margin: 0 0 41px 0;
+  padding-bottom: 22px;
+  border-bottom: 4px solid #cdad4c; }
+
+h3 {
+  font: 900 18px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #606060;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0; }
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+button {
+  margin-top: 20px; }
+
+button a {
+  display: block;
+  font: bold 13px/33px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #ce6c4a;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  padding: 0 15px; }
+
+button a:hover {
+  color: #ffffff;
+  background: #cdad4c !important;
+  text-decoration: none !important;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.top-banner {
+  height: 377px;
+  width: 100%;
+  background: url("../images/bg_pic1.jpg") no-repeat top center;
+  overflow: hidden;
+  border-top: 5px solid #ff903f; }
+  .top-banner .tb-sec {
+    height: 377px;
+    width: 1170px;
+    margin: 60px auto 0; }
+    .top-banner .tb-sec .tb_logo {
+      text-align: center;
+      height: 213px; }
+    .top-banner .tb-sec .tb_navbar {
+      height: 32px;
+      padding: 14px 0;
+      margin-bottom: 23px;
+      text-align: center; }
+      .top-banner .tb-sec .tb_navbar .tbnav-ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 350px;
+        font: bold 15px 'Open Sans'; }
+        .top-banner .tb-sec .tb_navbar .tbnav-ul li a {
+          color: #fff;
+          line-height: 32px;
+          padding: 5px 10px; }
+        .top-banner .tb-sec .tb_navbar .tbnav-ul li a:hover {
+          border-top: 1px solid #fff;
+          border-bottom: 2px solid #fff; }
+        .top-banner .tb-sec .tb_navbar .tbnav-ul .aboutus_dangye {
+          border-top: 1px solid #fff;
+          border-bottom: 2px solid #fff; }
+
+.footer {
+  padding: 19px 0;
+  text-align: center;
+  background: #ce6c4a;
+  color: #fff; }
+
+/*# sourceMappingURL=base.css.map */

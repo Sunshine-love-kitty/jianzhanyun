@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet"  type="text/css"  href="css/base.css" >
+    <link rel="stylesheet"  type="text/css"  href="css/contactus.css" >
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="sass/base.scss">
+    <link rel="stylesheet" href="sass/contactus.scss">
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2wEvNZimZ6HdGfdOwGyaYTr4DfPVCtVi"></script>
+</head>
+<body>
+<!--1.顶端导航开始-->
+<div class="top-banner">
+    <div class="tb-sec">
+        <div class="tb_logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="tb_navbar">
+            <ul class="tbnav-ul">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../aboutus/aboutus.html">关于我们</a></li>
+                <li><a href="../Cloud services/cloud.html">云服务</a></li>
+                <li><a href="../Company news/news.html">公司动态</a></li>
+                <li  class="aboutus_dangye"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--顶端导航结束-->
+
+<!--2.其他部分开始-->
+<!--2.1地图部分开始-->
+<div class="map">
+    <div class="map_w">
+        <h2>地图</h2>
+        <div class="map_imgs">
+            <!--百度地图容器-->
+            <div style="width:1170px;height:437px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+        </div>
+    </div>
+</div>
+<!--2.1地图部分结束-->
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(121.506951,31.238765),15);
+    }
+    function setMapEvent(){
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"我的备注",title:"我的标记",imageOffset: {width:0,height:3},position:{lat:31.237715,lng:121.51076}}
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
+<!--2.2找到我们部分开始-->
+<div class="searchus">
+    <div class="sear_left">
+        <h2>找到我们</h2>
+        <h3>公司总部</h3>
+        <p>上海浦东新区陆家嘴花园石桥路33号23楼</p>
+        <h3>咨询电话</h3>
+        <p>+86-152-52105210</p>
+    </div>
+    <div class="cont_right">
+        <h2>联系我们</h2>
+        <input type="text" placeholder="*留言板">
+        <button><a href="#">提交</a></button>
+    </div>
+</div>
+<!--2.2找到我们部分结束-->
+<!--2.其他部分结束-->
+
+<!--3.底部开始-->
+<div class="footer">
+    版权所有316573134@qq.com
+</div>
+<!--3.底部结束-->
+</body>
+</html>

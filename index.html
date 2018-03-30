@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet"  type="text/css"  href="css/index.css" >
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script>
+        window.onload=function(){
+            function $(id){return document.getElementById(id);}
+            $("login").onclick=function(){
+                $("mask").style.display="block";
+                $("box").style.display="block";
+            }
+            $("close_all").onclick=function(){
+                $("mask").style.display="none";
+                $("box").style.display="none";
+            }
+        }
+    </script>
+</head>
+<body>
+<!--1.顶端导航开始-->
+<div class="top-banner">
+    <div class="tb-sec">
+        <div class="tb_logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="tb_navbar">
+            <ul class="tbnav-ul">
+                <li>
+                    <a href="#">首页</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="#">公司动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutus/aboutus.html">关于我们</a></li>
+                <li><a href="Cloud services/cloud.html">云服务</a></li>
+                <li><a href="Company news/news.html">公司动态</a></li>
+                <li><a href="contactus/contactus.html">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="tb_bigtitle">
+            <span class="text-tit">腾讯云官方建站服务合作伙伴</span>
+        </div>
+    </div>
+</div>
+<!--顶端导航结束-->
+<!--下拉菜单-->
+<script>
+    $(document).ready(function(){
+        $('.tbnav-ul li').eq(0).hover(function(){
+            $(this).children('ul').slideToggle();
+        })
+    })
+</script>
+
+<!--2.其他部分开始-->
+<div class="other-section">
+    <div id="mask"></div>
+    <div id="box">
+        <span id="close_all">×</span>
+    </div>
+    <!--2.1登临H5建站云开始-->
+        <div class="set_title">
+            <h1 class="set_bigtit">欢迎登临H5建站云<span class="click_login"><a href="javascript:;" id="login">你好，请登录</a></span></h1>
+            <p>上海陆家嘴高逼格团队的用心经营</p>
+            <p>一套采用国际最前沿网站开发技术的高颜值自助建站云服务系统</p>
+        </div>
+    <!--登临H5建站云结束-->
+    <!--2.2了解更多部分开始-->
+        <div class="know_more">
+            <ul class="knowm-ul">
+                <li>
+                    <div class="text_all">
+                        <h3 class="texta-big">永远领先一步</h3>
+                        <p>与传统的网站制作流程相比，我们的自助建站云系统可以让使用者根据市场的变化随时更新内容信息，摆脱对建站公司技术和人员的依赖。此外，大陆的备案制上线流程周期较长，我们提供即可上线的功能，让使用者在前端永远比竞争对手领先一步。</p>
+                        <button><a href="#">了解更多</a></button>
+                        <div class="tex_img">
+                            <img src="images/page1_icon1.png">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_all">
+                        <h3 class="texta-big">激情拥抱蜕变</h3>
+                        <p>在这样一个唯有变化才是永恒不变的时代，一成不变的网站注定会使客户失去新鲜感从而导致粘合度的下降。我们的云平台提供海量国际顶尖设计师的前端理念，让您网站的每一次变化高雅而不失端庄，惊喜而不失熟悉的味道，最低的成本实现最惊艳的蜕变。</p>
+                        <button><a href="#">了解更多</a></button>
+                        <div class="tex_img">
+                            <img src="images/page1_icon2.png">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text_all">
+                        <h3 class="texta-big">趋势个人电商</h3>
+                        <p>平台电商时代已经是过去式，这个时代造就了淘宝和京东等互联网商业巨头。个人电商时代是正在进行时，我们的建站云系统提供当下最潮流的个人电商平台，让您摆脱对平台电商恶性排名的依赖，在互联网的海洋里打造全新的商业品牌。</p>
+                        <button><a href="#">了解更多</a></button>
+                        <div class="tex_img">
+                            <img src="images/page1_icon3.png">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!--了解更多部分结束-->
+
+    <!--2.3核心产品部分开始-->
+    <div class="product_show">
+        <div class="prod_w">
+            <h2>核心产品</h2>
+            <div class="all_showimg">
+                <div class="img_left">
+                    <ul class="leftimg-ul">
+                        <li class="img_big">
+                            <i class="shade_i">
+                                <span class="title">Lorem ipsum dolor sit amet, consectetur</span>
+                                <span>Sed luctus mi sit amet massa porttitor, non interdum leo molestie. Duis quis consequat felis, id consequat leo.</span>
+                            </i>
+                            <img src="images/page1_pic1.jpg">
+                        </li>
+                        <li class="img_normal">
+                            <i class="shade_i2">
+                                <span class="title">Lorem ipsum</span>
+                                <span>Sed luctus mi sit amet massa porttitor</span>
+                            </i>
+                            <img src="images/page1_pic2.jpg">
+                        </li>
+                        <li class="img_normal">
+                            <i class="shade_i2">
+                                <span class="title">Lorem ipsum</span>
+                                <span>Sed luctus mi sit amet massa porttitor</span>
+                            </i>
+                            <img src="images/page1_pic3.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="img_right">
+                    <ul class="leftimg-ul">
+                        <li class="img_normal">
+                            <i class="shade_i2">
+                                <span class="title">Lorem ipsum</span>
+                                <span>Sed luctus mi sit amet massa porttitor</span>
+                            </i>
+                            <img src="images/page1_pic4.jpg">
+                        </li>
+                        <li class="img_normal">
+                            <i class="shade_i2">
+                                <span class="title">Lorem ipsum</span>
+                                <span>Sed luctus mi sit amet massa porttitor</span>
+                            </i>
+                            <img src="images/page1_pic5.jpg">
+                        </li>
+                        <li class="img_big2">
+                            <i class="shade_i">
+                                <span class="title">Lorem ipsum dolor sit amet, consectetur</span>
+                                <span>Sed luctus mi sit amet massa porttitor, non interdum leo molestie. Duis quis consequat felis, id consequat leo.</span>
+                            </i>
+                            <img src="images/page1_pic6.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button><a href="#">浏览更多</a></button>
+        </div>
+    </div>
+    <!--核心产品部分结束-->
+
+    <!--2.4名言部分开始-->
+    <div class="saying_show">
+        <div class="posit_img"><img src="images/page1_icon4.png"></div>
+        <p class="saying_small">“当初微软做起来的时候，人们都说没人能超越微软，后来出现了雅虎；人们说没人能超越雅虎，后来又出现了eBay；人们觉得eBay已经很了不起了，又出现了谷歌；当人们觉得谷歌已经像太阳一样无法被超越了，现在又出现了Facebook。这世界永远是机会，一个创业者身上最优秀的素质，那就是保持乐观。乐观不仅是自己安慰自己，左手温暖右手，还要把自己的快乐分享给别人。唯有这样，人生的路才会走得长远。”</p>
+        <a href="#" class="link">阿里巴巴创始人 马云</a>
+    </div>
+    <!--名言部分结束-->
+
+    <!--2.5客户的声音开始-->
+    <div class="customer_listen">
+        <div class="customer_w">
+            <div class="customer_left">
+                <h2>客户的声音</h2>
+                <p>H5建站云的模板和国内其他建站供应商非常不同，有自己的独特风格且品种相当丰富。我可以任意更换模板，让自己的网站永远充满新鲜感。</p>
+                <p>H5建站云新推出的背景视频服务实在是太棒。嵌入的效果极佳，比之前优酷弹出框美太多。</p>
+                <button><a href="#">了解更多</a></button>
+            </div>
+            <div class="customer_right">
+                <img src="images/page1_pic7.jpg">
+            </div>
+        </div>
+    </div>
+    <!--客户的声音结束-->
+
+    <!--2.6联系我们开始-->
+    <div class="contact_w">
+        <h2>联系我们</h2>
+        <p>中国上海浦东新区陆家嘴花园石桥路33号23楼</p>
+        <fieldset>
+            <div class="form_left">
+                <input type="text" placeholder="姓名:">
+                <input type="text" placeholder="邮件:">
+                <input type="text" placeholder="电话:">
+            </div>
+            <div class="form_right">
+                <input type="text" placeholder="消息:">
+            </div>
+        </fieldset>
+        <button><a href="#">提交</a></button>
+    </div>
+    <!--2.6联系我们结束-->
+</div>
+
+<!--其他部分部分结束-->
+<!--3.底部开始-->
+<div class="footer">
+    版权所有316573134@qq.com
+</div>
+<!--3.底部结束-->
+</body>
+</html>
